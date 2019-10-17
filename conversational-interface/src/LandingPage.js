@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Button from './Button.js';
+import {BrowserRouter as Router, Link, Route } from 'react-router-dom';
+
 import './LandingPage.css';
 
 class LandingPage extends Component {
@@ -35,7 +37,10 @@ class LandingPage extends Component {
             <div className='footerBar'>
                 <div id='inputBar'>
                     <input type='text' id='urlForm'></input>
-                    <Button  onClick={() => this.clickGo()} buttonText = {"ANALYZE TEXT"}></Button>
+                    <Link style={{ textDecoration: 'none' }} to={`/ask`}>
+                        <Button  onClick={() => this.clickGo()} buttonText = {"ANALYZE TEXT"}></Button>
+                    </Link>
+                    
                 </div>
                 
                 
