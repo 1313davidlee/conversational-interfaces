@@ -74,3 +74,10 @@
 #urlForm:focus{
     outline: none;
 }
+
+.IPcontentBar{
+    height: 50%;
+    width: 100%;
+    top: 20%;
+    background-color: pink;
+}

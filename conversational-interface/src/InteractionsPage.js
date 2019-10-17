@@ -18,7 +18,9 @@ class InteractionsPage extends Component {
                     </div>
                 </div>
             </div>
+            <div className='IPcontentBar'>
 
+            </div>
             <div class='IPfooterBar'>
                 <input type='text' id='IPurlForm'></input>
             </div>
