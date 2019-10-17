@@ -14,25 +14,25 @@ class LandingPage extends Component {
     
 
     clickGo(){
-        print("hello!")
+        console.log("hi")
     }
 
     render() {
       return (
-        <div class='background'>
-            <div class='headerBar'>
+        <div className='background'>
+            <div className='headerBar'>
                 
-                <div class='headerBarContent'>
-                    <div class='headerBarTitle'>
+                <div className='headerBarContent'>
+                    <div className='headerBarTitle'>
                         Read something that confused you?
                     </div>
-                    <div class='headerBarSubtitle'>
+                    <div className='headerBarSubtitle'>
                         Let our deep learning model read it, and thousands of other articles, to answer your questions 
                     </div>
                 </div>
             </div>
 
-            <div class='footerBar'>
+            <div className='footerBar'>
                 <div id='inputBar'>
                     <input type='text' id='urlForm'></input>
                     <Button  onClick={() => this.clickGo()} buttonText = {"ANALYZE TEXT"}></Button>
