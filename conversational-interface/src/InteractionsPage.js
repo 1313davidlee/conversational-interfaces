@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Button from './Button.js';
 import './InteractionsPage.css';
+import SummaryPanel from './SummaryPanel.js'
 
 class InteractionsPage extends Component {
 
@@ -19,6 +20,7 @@ class InteractionsPage extends Component {
                 </div>
             </div>
             <div className='IPcontentBar'>
+                <SummaryPanel></SummaryPanel>
 
             </div>
             <div class='IPfooterBar'>
@@ -31,3 +33,4 @@ class InteractionsPage extends Component {
   }
   
   export default InteractionsPage;
+  
