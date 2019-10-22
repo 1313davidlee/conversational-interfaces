@@ -4,7 +4,9 @@ import './ArticleClip.css';
 class ArticleClip extends Component {
     render() {
         return (
-            <div className='APtext'></div>
+            <div className='APtext'>
+                
+            </div>
         )
     }
 }
