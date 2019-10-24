@@ -1,8 +1,24 @@
 .APtext{
-    background: orange;
+    background: white;
     height: 85%;
     margin-left: 2%;
     margin-right: 1%;
     margin-top: 2%;
-    width: 60%;
+    margin-bottom: 2%;
+    width: 65%;
+    border: 1px solid black
+}
+
+.APtextHeadlineContent{
+    font-family: roboto;
+    text-align: left;
+    color:black;
+    font-size: 12px;
+}
+
+.APtextShortSummaryContent{
+    font-family: roboto;
+    text-align: left;
+    color:black;
+    font-size: 10px;
 }
