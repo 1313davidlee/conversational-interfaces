@@ -13,8 +13,8 @@ class Button extends Component {
 
     render() {
       return (
-        <div class='buttonBackground'>
-            <div class='text'>
+        <div className='buttonBackground'>
+            <div className='text'>
                 {this.state.buttonText}
             </div>
             
