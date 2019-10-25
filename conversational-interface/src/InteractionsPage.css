@@ -47,9 +47,11 @@
     bottom: 0px;
     position: fixed;
     display: flex;
-    background: white;
+    color: gray;
     align-items: center;
     justify-content: left;
+    background:#e3e3e3;
+    
 }
 
 #IPinputBar{
@@ -82,4 +84,9 @@
     top: 20%;
     background-color: pink;
     position: fixed;
+}
+
+.enterButton{
+    background: white;
+
 }
