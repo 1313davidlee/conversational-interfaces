@@ -1,0 +1,39 @@
+.SPbackground{
+    height: 100%;
+    width: 34%;
+    margin-left: 66%;
+    background: white;  
+}
+
+.SPheaderBar{
+    height: 10%;
+    width: 100%;
+    bottom: 80%;
+    background: white;
+}
+
+.SPheaderBarContent{
+    font-family: roboto;
+    text-align: left;
+    color:black;
+    font-size: 30px;
+}
+
+.SParticleClip{
+    height: 20%;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: 1px solid black;
+}
+
+.SPsummary{
+    height: 60%;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: 1px solid black;
+}
+   
+

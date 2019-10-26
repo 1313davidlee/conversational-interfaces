@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Button from './Button.js';
 import InformationDashboard from './InformationDashboard.js'
 import './InteractionsPage.css';
+import SummaryPanel from './SummaryPanel.js'
 
 
 
@@ -49,6 +50,8 @@ class InteractionsPage extends Component {
             </div>
             <div className='IPcontentBar'>
                 <InformationDashboard userQuestions={this.state.userQuestions}></InformationDashboard>
+                <SummaryPanel></SummaryPanel>
+
             </div>
             <div class='IPfooterBar'>
                 <input type='text' id='IPurlForm'></input>
@@ -61,3 +64,4 @@ class InteractionsPage extends Component {
   }
   
   export default InteractionsPage;
+  
