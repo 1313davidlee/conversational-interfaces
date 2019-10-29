@@ -1,6 +1,6 @@
 .infoDashBG{
     height: 100%;
-    width: 40%;
+    width: 50%;
     background: white;
     border-right: 3px solid gray;
     border-left: 3px solid gray;
@@ -19,21 +19,20 @@
 
 
 .IDinfoDump{
-    height: 89%;
+    height: 75%;
     overflow-y: auto;
-    padding-bottom: 10%;
-    padding-top: 5%;
 }
 
 
-.IPfooterBar{
+.IDfooterBar{
     width: 100%;
-    height: 15%;
+    height: 14%;
     display: flex;
     color: black;
     align-items: center;
     justify-content: left;
-    background:#e3e3e3;
+    background: #e3e3e3;
+    position: -webkit-sticky;
     position: sticky;
 }
 
@@ -45,16 +44,17 @@
     
 }
 
-#IPurlForm{
-    width: 45%;
+#IDurlForm{
+    width: 70%;
     outline: none;
     border: none;
     border-bottom: 3px solid lightgray;
     margin-left: 25px;
-    margin-bottom: 15px;
     font-size: 20px;
+    margin-right: 15px;
     font-family: Roboto;
     font-weight: 900;
+    background: #e3e3e3;
 }
 
 #urlForm:focus{
@@ -65,5 +65,11 @@
 
 .enterButton{
     background: white;
-
+    width: 60px;
+    height: 25px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }

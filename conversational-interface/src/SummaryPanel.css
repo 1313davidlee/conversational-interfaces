@@ -1,15 +1,13 @@
 .SPbackground{
     height: 100%;
-    width: 33%;
+    width: 50%;
     background: white;
 }
 .SPheader{
-    /*text-align: left;*/
-    padding: 3%;
-    font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
-    color: gray;
+    text-align: left;
+    padding: 5px;
+    color:black;
+    font-size: 25px;
 }
 .wrapper{
     border: 1px solid black; 
@@ -39,15 +37,3 @@
 }
    
 
-.IPfooterBar{
-    width: 100%;
-    height: 8%;
-    z-index: 50;
-    bottom: 0px;
-    display: flex;
-    color: black;
-    align-items: center;
-    justify-content: left;
-    background:#e3e3e3;
-    
-}

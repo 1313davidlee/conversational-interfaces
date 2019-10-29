@@ -20,25 +20,26 @@ class InformationDashboard extends Component {
 
 askQuestions(){
   
-    var input_text = document.getElementById('IPurlForm').value
-    document.getElementById('IPurlForm').value = ''
-    this.state.userQuestions.push(
-      {
-        "question": input_text,
-        "source": "the new york times",
-        "answer": "no",
-      }
+    var input_text = document.getElementById('IDurlForm').value
+    if(input_text == ''){
+      alert("You didn't ask a question!")
+    }
+    else{
+      document.getElementById('IDurlForm').value = ''
+      this.state.userQuestions.push(
+        {
+          "question": input_text,
+          "source": "the new york times",
+          "answer": "no",
+        }
+      )
+      var updated_questions = []
+      updated_questions = this.state.userQuestions
 
-    )
-    var updated_questions = []
-    updated_questions = this.state.userQuestions
-
-    this.setState({userQuestions: updated_questions})
-   /*   this.state.userQuestions.push({
-        "question" : input_text,
-        "source": "The New York Times",
-        "answer": "no",
-    })*/
+      this.setState({userQuestions: updated_questions})
+    }
+    
+   
 }
 
 
@@ -57,8 +58,8 @@ returnstuff(){
             <div className='IDinfoDump'>
                 {this.returnstuff()}
             </div>
-            <div class='IPfooterBar'>
-                <input type='text' id='IPurlForm'></input>
+            <div class='IDfooterBar'>
+                <input type='text' id='IDurlForm'></input>
                 <div onClick={()=> this.askQuestions()} className='enterButton'>Enter</div>
             </div>
             
