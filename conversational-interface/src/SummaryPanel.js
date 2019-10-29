@@ -7,7 +7,7 @@ class SummaryPanel extends Component {
         return (
             <div className='SPbackground'>
                 <div className='SPheader'>
-                    Links from the Article
+                    Further Reading
                 </div>
                 <div className='wrapper'>
                     <img class="image" src="http://placekitten.com/200/200"></img>

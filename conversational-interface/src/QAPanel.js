@@ -16,11 +16,14 @@ class QAPanel extends Component {
        
             <div className='QAPanel'>
                 <div className='IDquestionBar'>
-                    {this.state.question}
+
+                    Question: {this.state.question}
                 </div>
                 <div className='IDanswerBar'>
-                    <div className='IDanswerQuote'>{this.state.answer}</div>
-                    <div className='IDanswerSource'>{this.state.source}</div>
+                    <div className='IDanswerQuote'>
+                    Answer: {this.state.answer}</div>
+                    <div className='IDanswerSource'>
+                    Source: {this.state.source}</div>
                 </div>
             </div>
         
