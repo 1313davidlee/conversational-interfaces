@@ -7,9 +7,16 @@
 
 }
 
+.noAnswer{
+    height: 40%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
 .IDquestionBar{
     height: 15%;
-    width: 100%;
+    width: 80%;
     font-family: 'Courier New', 'Courier New', Courier, monospace;
     border: 1px solid gray;
     border-radius: 10px;
@@ -17,21 +24,23 @@
 }
 
 .IDanswerBar{
-    width: 100%;
+    width: 80%;
     border: 1px solid gray;
     border-radius: 10px;
     height: 80%;
     font-family: 'Courier New', 'Courier New', Courier, monospace;
     padding: 5px;
+    margin-top: 5px;
 }
 
 .IDanswerQuote{
     height: 70%;
     width: 100%;
-    border-bottom: 1px solid gray;
-    
 }
 
-.IDanswerSource{
-    
+.divider{
+    border: 0.5px solid grey;
+    margin-left: 3%;
+    width: 90%;
+    margin-bottom: 3%;
 }
