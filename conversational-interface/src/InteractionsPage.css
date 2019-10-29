@@ -84,6 +84,7 @@
     top: 20%;
     background-color: pink;
     position: fixed;
+    display: flex;
 }
 
 .enterButton{
