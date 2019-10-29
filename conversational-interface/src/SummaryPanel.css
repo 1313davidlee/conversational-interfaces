@@ -1,39 +1,40 @@
 .SPbackground{
     height: 100%;
-    width: 34%;
-    margin-left: 66%;
-    background: white;  
-}
-
-.SPheaderBar{
-    height: 10%;
-    width: 100%;
-    bottom: 80%;
+    width: 33%;
+    margin-left: 67%;
     background: white;
 }
-
-.SPheaderBarContent{
-    font-family: roboto;
+.SPheader{
     text-align: left;
+    padding: 5px;
     color:black;
-    font-size: 30px;
+    font-size: 25px;
 }
-
-.SParticleClip{
-    height: 20%;
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
-    border: 1px solid black;
+.wrapper{
+    border: 1px solid black; 
+    padding: 5px;
+    height: 100px;
+    margin: 5px;
 }
-
-.SPsummary{
+.image { 
+    float: right; 
+    height: 100px;
+}
+.headline {
+    font-size: 13px;
+    margin: 2px;
+    padding: 3px;
+}
+.description {
+    margin: 2px;
+    padding: 3px;
+    font-size: 11px;
+}
+.linkBox{
     height: 60%;
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-top: 5%;
+    margin: 5px;
     border: 1px solid black;
+    padding: 5px;
 }
    
 
