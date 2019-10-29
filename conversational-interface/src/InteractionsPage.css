@@ -40,19 +40,7 @@
     align-items: center
 }
 
-.IPfooterBar{
-    width: 100%;
-    height: 8%;
-    z-index: 50;
-    bottom: 0px;
-    position: fixed;
-    display: flex;
-    color: gray;
-    align-items: center;
-    justify-content: left;
-    background:#e3e3e3;
-    
-}
+
 
 #IPinputBar{
     display: inline-flex;
@@ -62,24 +50,10 @@
     
 }
 
-#IPurlForm{
-    width: 45%;
-    outline: none;
-    border: none;
-    border-bottom: 3px solid lightgray;
-    margin-left: 25px;
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-family: Roboto;
-    font-weight: 900;
-}
 
-#urlForm:focus{
-    outline: none;
-}
 
 .IPcontentBar{
-    height: 72%;
+    height: 80%;
     width: 100%;
     top: 20%;
     background-color: pink;
@@ -87,7 +61,3 @@
     display: flex;
 }
 
-.enterButton{
-    background: white;
-
-}

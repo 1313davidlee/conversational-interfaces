@@ -24,3 +24,46 @@
     padding-bottom: 10%;
     padding-top: 5%;
 }
+
+
+.IPfooterBar{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: left;
+    background:#e3e3e3;
+    position: sticky;
+}
+
+#IPinputBar{
+    display: inline-flex;
+    height: 20%;
+    align-items: center;
+    width: 90%;
+    
+}
+
+#IPurlForm{
+    width: 45%;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid lightgray;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 900;
+}
+
+#urlForm:focus{
+    outline: none;
+}
+
+
+
+.enterButton{
+    background: white;
+
+}
