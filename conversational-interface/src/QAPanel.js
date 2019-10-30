@@ -36,6 +36,7 @@ class QAPanel extends Component {
                     </div>
                 </div>
             </div>
+            <div className='divider'></div>
         </div> 
       );
     }

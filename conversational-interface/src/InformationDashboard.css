@@ -2,7 +2,7 @@
     height: 100%;
     width: 50%;
     background: white;
-    border-right: 3px solid gray;
+    border-right: 1px solid gray;
     border-left: 3px solid gray;
     
 }
@@ -15,6 +15,7 @@
     font-weight: 600;
     color: gray;
     padding: 3%;
+    overflow-y: auto;
 }
 
 
@@ -60,8 +61,6 @@
 #urlForm:focus{
     outline: none;
 }
-
-
 
 .enterButton{
     background: white;
