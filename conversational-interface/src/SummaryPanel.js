@@ -10,7 +10,7 @@ class SummaryPanel extends Component {
                         Further Reading
                 </div>
                     <div className='wrapper'>
-                        <img class="image" src="http://placekitten.com/200/200"></img>
+                        <img class="image" src="https://cdn.cnn.com/cnnnext/dam/assets/191013173100-biden-10-13-exlarge-169.jpg"></img>
                         <div class="headline">
                             Biden Calls for Trump Impeachment for First Time
                         </div>
