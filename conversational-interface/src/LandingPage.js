@@ -29,7 +29,7 @@ class LandingPage extends Component {
                         Read something that confused you?
                     </div>
                     <div className='headerBarSubtitle'>
-                        Let our deep learning model read it, and thousands of other articles, to answer your questions 
+                        Let our model help answer the questions that you have.
                     </div>
                 </div>
             </div>
