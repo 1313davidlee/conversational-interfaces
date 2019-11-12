@@ -1,14 +1,179 @@
+*{
+    margin: 0px;
+    padding:0;
+    overflow-x: hidden;
+
+}
+
+html{
+    margin: none;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0px;
+}
+
 .lander{
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(#4064F6, #2647B6);
 }
 
-.inputBar{
-    font-family: roboto;
-    font-weight: 500;
+.mainPage{
+    height: 100vh;
+    width: 100vw;
+    
+    background: white;
+}
+
+
+
+.landerContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landerTitle{
     color: white;
+    font-family: arial;
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+#inputBar{
+    background: none;
+    border: none;
+    border-bottom: 3px solid white;
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    color: white;
+    outline: none;
+}
+
+.inputBar{
+    width: 100%;
+    height: 50px;
+    color: white;
+    width: 100%;
+    height: 70px;
+    flex-direction: row;
+    color: white;
+    display: flex;
+    font: arial;
+}
+
+.sampleQuestions{
+    margin-top: 25px;
+    color: white;
+    font-family: arial;
+}
+
+.suggestedQuestion{
+    margin-bottom: 5px;
+}
+
+.goButton{
+    margin-left: 2%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-top: 7px;
+    border-radius: 7px;
+    color: #4064F6;
+    background: white;
+    font-family: arial;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#goButtonLink{
+    width: 10%;
+}
+
+.mainPageSearch{
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.mainPageSearchBar{
+    margin-left: 50px;
+    width: 60%;
+    height: 30px;
+    border: 0px;
+    border-bottom: 3px solid lightgray;
+    outline: none;
+    font-size: 20px;
+    color: #5b5b5b;
+}
+
+.qaParent{
+    height: 70%;
+    width: 100%;
+    background: #e9e9e9;
+    position: relative;
+}
+
+.qaContentBox{
+    margin: 50px;
+    font-family: arial;
+}
+
+.matchedQuestionTitle{
+    margin-bottom: 10px;
+}
+
+.matchedQuestionString{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+.possibleAnswerTitle{
+    margin-bottom: 30px;
+}
+
+.generatedAnswerString{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.sourceCard{
+    width: 25%;
+    height: 80px;
+    border: 1px solid black;
+    bottom: 10px;
+    left: 73%;
+}
+
+.sourceImage{
+    width: 50%;
+}
+
+.qaFooter{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: flex-end;
+
+
 }

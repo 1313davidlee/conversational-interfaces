@@ -5,9 +5,57 @@
     </head>
     <body>
         <div class='lander'>
-            <div class='inputBar'>
-                ASK A QUESTION ABOUT THE 2020 PRESIDENTIAL ELECTION.
-            </div>  
+            <div class='landerContent'>
+                <div class='landerTitle'>
+                    ASK A QUESTION ABOUT THE 2020 ELECTION
+                </div>
+                <div class='inputBar'>
+                        <input  id='inputBar' type="text">
+                        <a id='goButtonLink' href='#mainPage'>
+                            <div class='goButton'>Go!</div>
+                        </a>
+                </div> 
+                <div class='sampleQuestions'>
+                    <div class='suggestedQuestion'>Question 1?</div>
+                    <div class='suggestedQuestion'>Question 2?</div>
+                    <div class='suggestedQuestion'>Question 3?</div>
+                    <div class='suggestedQuestion'>Question 4?</div>
+                </div>
+
+            </div>
+             
+        </div>
+        <div id='mainPage' class='mainPage'>
+              <div class='mainPageSearch'>
+                    <input placeholder='Ask another question' class='mainPageSearchBar' type="text">
+                    
+              </div>
+              <div class='qaParent'>
+                  <div class='qaContentBox'>
+                    <div class='matchedQuestionTitle'>We matched your question to...</div>
+                    <div class='matchedQuestionString' >SOME LONG QUESTION STRING??????</div>
+                    <div class='possibleAnswerTitle'>Here's a possible answer.</div>
+                    <div class='generatedAnswerString'>
+                        Choose the exact spot you want to send your link to, choose and element near it (a div, header tag, paragraph.. whatever as long as it's in the right spot), add id="something", you can call them anything you like as long as the names are the same in the link and the target ID and preferably no spaces (spaces change to %20 in the address bar and look a tad messy).
+                    </div>
+
+
+                  </div>
+                  
+                  
+              </div>
+              <div class='qaFooter'>
+                    <div class='sourceCard'>
+                            
+                          <img class='sourceImage' src='https://cdn.vox-cdn.com/thumbor/cXFmLvR0cLwgspir3axOU_AK2d0=/0x0:5260x3507/1360x765/filters:focal(2474x62:3314x902):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65652070/1184672034.jpg.0.jpg'>
+                          <div>
+                                <div class='sourceTitle'>This is the article's title</div>
+                                <div class='sourceStub'>this is the article's stub </div>
+                          </div>
+      
+                      </div>
+              </div>
+                 
         </div>
     </body>
 </html>
