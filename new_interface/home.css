@@ -109,6 +109,7 @@ body{
     width: 100vw;
     background: white;
     font-family: 'Raleway', sans-serif;  
+    min-height: 100vh;
 }
 
 .mainPageSearch{

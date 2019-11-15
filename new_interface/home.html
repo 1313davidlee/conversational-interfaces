@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.core.js'></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.js"></script>
+        <script src="index.js"></script>
         <link rel="stylesheet" type="text/css" href="./home.css"> 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -35,67 +38,54 @@
              
         </div>
         <div id='mainPage' class='mainPage'>
-            <div class='mainPageSearch'>
-                <input placeholder='Ask another question' class='mainPageSearchBar' type="text">
-                    <a>
-                        <div style='color: lightgray' id='goButton' class='goButton'>
+            
+
+            <form class='mainPageSearch' onsubmit="askQuestion();return false;">
+                    <input placeholder='Ask another question' class='mainPageSearchBar' type="text">
+                    <input type="submit">
+                    
+            </form>
+
+            <div id='questionSet'></div>
+
+            <!--
+                <div style='color: lightgray' id='goButton' class='goButton'>
                             <i class="material-icons">
                                 search
                             </i>
                         </div>
-                    </a>      
-            </div>
+            -->
+            
+
+             
+
+                 
+        </div>
+
+        <script id="comment-template" type="text/x-lodash-template">
             <div class='qaParent'>
                 <div class='qaContentBox'>
                     <div class='prompt'>we matched your question to...</div>
-                    <div class='text' >What is our question?</div>
+                    <div class='text' ><%= matchedQuestion %></div>
                     <div class='prompt'>here's a possible answer...</div>
                     <div class='text'>
-                        Choose the exact spot you want to send your link to, choose and element near it (a div, header tag, paragraph.. whatever as long as it's in the right spot), add id="something", you can call them anything you like as long as the names are the same in the link and the target ID and preferably no spaces (spaces change to %20 in the address bar and look a tad messy).
+                        <%= matchedAnswer %>
                     </div>
                     <div class='sourcePanel'>
                         <div class='sourceCard'>
                             <img class='sourceImage' src='https://cdn.vox-cdn.com/thumbor/cXFmLvR0cLwgspir3axOU_AK2d0=/0x0:5260x3507/1360x765/filters:focal(2474x62:3314x902):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65652070/1184672034.jpg.0.jpg'>
                             <div class='sourceText'>
-                                  <div class='sourceTitle'>This is the article's source</div>
-                                  <div class='sourceStub'>this is the article's title </div>
+                                  <div class='sourceTitle'><%= sourceTitle %></div>
+                                  <div class='sourceStub'><%= sourceName %></div>
                             </div>
         
                         </div>
                     </div>
-
-                    <script>
-                    
-                     
-
-                    </script>
-                    
-
-
                   </div>
-                  
-                  
-              </div><!--
-              <div class='qaFooter'>
-                    <div class='sourceCard'>
-                            
-                          <img class='sourceImage' src='https://cdn.vox-cdn.com/thumbor/cXFmLvR0cLwgspir3axOU_AK2d0=/0x0:5260x3507/1360x765/filters:focal(2474x62:3314x902):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65652070/1184672034.jpg.0.jpg'>
-                          <div>
-                                <div class='sourceTitle'>This is the article's source</div>
-                                <div class='sourceStub'>this is the article's title </div>
-                          </div>
-      
-                      </div>
-              </div>-->
-                 
-        </div>
-
-        <script>
-        
-        
-        
-        
-        
+    
+              </div>
         </script>
+
     </body>
+
 </html>
