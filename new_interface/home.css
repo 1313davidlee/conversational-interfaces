@@ -144,6 +144,8 @@ body{
 
 .qaContentBox{
     margin: 50px;
+    border-bottom: 2.5px solid lightgray;
+    padding-bottom: 60px;
 }
 
 .prompt{

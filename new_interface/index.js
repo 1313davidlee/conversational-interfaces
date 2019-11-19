@@ -23,6 +23,8 @@ function postComment() {
 
 function askQuestion(){
 
+    //var asked_question = 
+
     var matched_q = sample_data[0].matched_q
     var answer_string = sample_data[0].answer_string
     var sourceName = sample_data[0].sourceName
