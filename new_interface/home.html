@@ -3,7 +3,6 @@
     <head>
         <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.core.js'></script> -->
         <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.js"></script>
-        <script src="index.js"></script>
         <link rel="stylesheet" type="text/css" href="./home.css"> 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -40,14 +39,14 @@
         <div id='mainPage' class='mainPage'>
             
 
-            <form class='mainPageSearch' onsubmit="askQuestion();return false;">
-                    <input placeholder='Ask another question' class='mainPageSearchBar' type="text">
-                    <input type="submit">
+            <div class='mainPageSearch'>
+                    <input id='userQuestion' placeholder='Ask another question' class='mainPageSearchBar' type="text">
+                    <input id='submit-button' type="submit">
                     
-            </form>
+            </div>
 
             <div id='questionSet'></div>     
-                           
+
         </div>
 
         <script id="comment-template" type="text/x-lodash-template">
@@ -61,7 +60,7 @@
                     </div>
                     <div class='sourcePanel'>
                         <div class='sourceCard'>
-                            <img class='sourceImage' src='https://cdn.vox-cdn.com/thumbor/cXFmLvR0cLwgspir3axOU_AK2d0=/0x0:5260x3507/1360x765/filters:focal(2474x62:3314x902):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65652070/1184672034.jpg.0.jpg'>
+                            <img class='sourceImage' src=<%= sourceImageURL %>>
                             <div class='sourceText'>
                                   <div class='sourceTitle'><%= sourceTitle %></div>
                                   <div class='sourceStub'><%= sourceName %></div>
@@ -73,7 +72,9 @@
     
               </div>
         </script>
+        
 
     </body>
+    <script src="bundle.js"></script>
 
 </html>
