@@ -1,31 +1,17 @@
 function askQuestion(){
     var user_question = document.getElementById('userQuestion').value
     console.log(user_question)
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
-        .then(response => response.json())
-        .then(json => fillFields(json))
-
     
-}
-
-const metascraper = require('metascraper')([
-  require('metascraper-image')(),
-  require('metascraper-publisher')(),
-  require('metascraper-title')(),
-])
-
-const got = require('got')
-
-const targetUrl = 'http://www.bloomberg.com/news/articles/2016-05-24/as-zenefits-stumbles-gusto-goes-head-on-by-selling-insurance'
-
-
-fetch(targetUrl)
-  .then(respones => console.log(response.text()))
-
-
-
-
-
+    var api_url = 'http://localhost:5000/myurl?question="' + user_question + '"'
+    fetch(api_url)
+        .then(response => response.json())
+        
+        .then(json => {
+          console.log("json", json);
+          fillFields(json)
+        }
+    )
+  }
 
 function fillFields(json) {
     console.log(json)
