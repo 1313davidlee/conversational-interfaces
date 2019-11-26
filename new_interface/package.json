@@ -9,14 +9,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "browserify": "^16.5.0"
+  },
   "dependencies": {
-    "browserify": "^16.5.0",
-    "got": "^9.6.0",
-    "metascraper": "^5.8.9",
-    "metascraper-image": "^5.8.7",
-    "metascraper-publisher": "^5.8.7",
-    "metascraper-title": "^5.8.7"
   },
   "description": ""
 }
