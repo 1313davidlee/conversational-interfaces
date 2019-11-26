@@ -1,4 +1,4 @@
-from flask import request, jsonify
+from flask import request, jsonify, render_template
 import spacy
 from app import app
 
@@ -8,6 +8,8 @@ my_dict ={"How old is Kamala Harris":"Kamala Harris is 42",
 nlp = spacy.load('en_core_web_lg')
 
 @app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route('/myurl')
 def myurl():
