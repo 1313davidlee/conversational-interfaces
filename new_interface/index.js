@@ -1,8 +1,14 @@
 function askQuestion(){
     var user_question = document.getElementById('userQuestion').value
+<<<<<<< HEAD
   console.log(user_question)
     
     var api_url = 'http://localhost:5000/myurl?question=' + user_question
+=======
+    console.log(user_question)
+    
+    var api_url = 'http://localhost:5000/myurl?question="' + user_question + '"'
+>>>>>>> master
     fetch(api_url)
         .then(response => response.json())
         
@@ -65,6 +71,10 @@ function ready(fn) {
   
 ready(function() {
     document.getElementById('submit-button').addEventListener('click',askQuestion)
+<<<<<<< HEAD
 })
 
 // key press??? for enter key
+=======
+})
+>>>>>>> master
